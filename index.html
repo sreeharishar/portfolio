@@ -381,7 +381,7 @@
           <p>Developed predictive models to enhance patient outcomes. Improved predictive accuracy by 20% through iterative model refinement.</p>
         </div>
         <!-- Hover Buttons -->
-        <div class="hover-buttons" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; gap: 10px; opacity: 0; transition: opacity 0.3s ease;">
+        <div class="hover-buttons" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; gap: 10px; opacity: 0; transition: opacity 0.3s ease;">
           <a href="your-slide-link" style="background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-size: 16px;">Slides</a>
           <a href="your-notebook-link" style="background-color: #2196F3; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-size: 16px;">Notebook</a>
         </div>
@@ -394,7 +394,7 @@
           <p>Processed over 100 million customer interactions and deployed machine learning models to boost marketing effectiveness by 20%.</p>
         </div>
         <!-- Hover Buttons -->
-        <div class="hover-buttons" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; gap: 10px; opacity: 0; transition: opacity 0.3s ease;">
+        <div class="hover-buttons" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; gap: 10px; opacity: 0; transition: opacity 0.3s ease;">
           <a href="your-slide-link" style="background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-size: 16px;">Slides</a>
           <a href="your-notebook-link" style="background-color: #2196F3; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-size: 16px;">Notebook</a>
         </div>
@@ -407,7 +407,7 @@
           <p>Preprocessed 10 years of data and developed models to improve trading decisions and portfolio performance.</p>
         </div>
         <!-- Hover Buttons -->
-        <div class="hover-buttons" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; gap: 10px; opacity: 0; transition: opacity 0.3s ease;">
+        <div class="hover-buttons" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; gap: 10px; opacity: 0; transition: opacity 0.3s ease;">
           <a href="your-slide-link" style="background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-size: 16px;">Slides</a>
           <a href="your-notebook-link" style="background-color: #2196F3; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-size: 16px;">Notebook</a>
         </div>
@@ -420,7 +420,7 @@
           <p>Analyzed listening habits and used clustering to uncover patterns in music's impact on mental health.</p>
         </div>
         <!-- Hover Buttons -->
-        <div class="hover-buttons" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; gap: 10px; opacity: 0; transition: opacity 0.3s ease;">
+        <div class="hover-buttons" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; gap: 10px; opacity: 0; transition: opacity 0.3s ease;">
           <a href="your-slide-link" style="background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-size: 16px;">Slides</a>
           <a href="your-notebook-link" style="background-color: #2196F3; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-size: 16px;">Notebook</a>
         </div>
@@ -431,6 +431,28 @@
   </div>
 
 </section><!-- /Project Section -->
+
+<style>
+    /* CSS for Hover Effect */
+    .portfolio-item:hover .hover-buttons {
+      display: flex; /* Show the buttons when hovering over the portfolio item */
+      opacity: 1;    /* Make buttons fully visible */
+    }
+
+    .portfolio-item {
+      position: relative; /* Ensure buttons are positioned relative to the image */
+    }
+
+    .hover-buttons a {
+      transition: background-color 0.3s ease;
+    }
+
+    .hover-buttons a:hover {
+      background-color: #45a049; /* Change color when hovering over buttons */
+    }
+</style>
+
+
 
 
 
