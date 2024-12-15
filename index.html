@@ -69,6 +69,7 @@
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#publications"><i class="bi bi-journal navicon"></i> Publications</a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
     </nav>
@@ -427,59 +428,77 @@
 </style>
 
 
-<!-- Publications Section -->
 <section id="publications" class="publications section light-background">
-
-  <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <h2>Publications</h2>
     <p>Explore my published research on topics related to AI, data science, and more.</p>
   </div><!-- End Section Title -->
 
-  <div class="container">
-
-    <ul class="publication-list">
-      <li>
-        <h4><a href="https://ijisrt.com/number-plate-recognition-a-for-parking-assist-and-road-safety" target="_blank" style="color: #2d2d2d; text-decoration: none;">Number Plate Recognition: A For Parking Assist and Road Safety</a></h4>
-        <p>International Journal of Innovative Science and Research Technology</p>
-      </li>
-      <li>
-        <h4><a href="https://ijisrt.com/crowd-safety-management-system" target="_blank" style="color: #2d2d2d; text-decoration: none;">Crowd Safety Management System</a></h4>
-        <p>International Journal of Innovative Science and Research Technology</p>
-      </li>
-    </ul>
-
-  </div><!-- End Container -->
-
+  <div class="container publication-container">
+    <div class="publication-card">
+      <h4><a href="https://ijisrt.com/number-plate-recognition-a-for-parking-assist-and-road-safety" target="_blank">Number Plate Recognition: A For Parking Assist and Road Safety</a></h4>
+      <p>International Journal of Innovative Science and Research Technology</p>
+    </div>
+    <div class="publication-card">
+      <h4><a href="https://ijisrt.com/crowd-safety-management-system" target="_blank">Crowd Safety Management System</a></h4>
+      <p>International Journal of Innovative Science and Research Technology</p>
+    </div>
+  </div><!-- End Publication Container -->
 </section><!-- End Publications Section -->
 
 <!-- CSS for Publications Section -->
 <style>
-  .publication-list {
-    list-style-type: none;
-    padding: 0;
+  .publication-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
   }
-  .publication-list li {
-    margin-bottom: 15px;
+
+  .publication-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
-  .publication-list h4 {
+
+  .publication-card h4 {
     margin: 0;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: bold;
   }
-  .publication-list p {
-    margin: 5px 0;
+
+  .publication-card p {
+    margin-top: 10px;
     color: #777;
+    font-size: 0.9em;
   }
-  .publication-list a {
+
+  .publication-card a {
     color: #007bff;
     text-decoration: none;
-    transition: color 0.3s;
+    font-weight: bold;
   }
-  .publication-list a:hover {
+
+  .publication-card a:hover {
     color: #0056b3;
   }
+
+  .publication-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .publication-container {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>
+
 
 
 
