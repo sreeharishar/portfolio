@@ -362,12 +362,12 @@
 </section><!-- End Resume Section -->
 
 
-<!-- Portfolio Section -->
-<section id="portfolio" class="portfolio section light-background">
+<!-- Project Section -->
+<section id="projects" class="projects section light-background">
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
-    <h2>Portfolio</h2>
+    <h2>Projects</h2>
     <p>Developed predictive models and visualized data insights in healthcare, e-commerce, and financial sectors, improving outcomes and efficiency by up to 30%. Enhanced decision-making through advanced data processing and real-time analytics.</p>
   </div><!-- End Section Title -->
 
@@ -375,7 +375,7 @@
 
     <div class="portfolio-grid" style="display: flex; flex-wrap: wrap; gap: 20px;">
       <div class="portfolio-item" style="flex: 1 1 calc(50% - 20px); box-sizing: border-box; position: relative; overflow: hidden;">
-        <img src="assets/img/portfolio/healthcare.jpg" alt="Healthcare Data Analysis" style="width: 100%; height: 100%; object-fit: cover;">
+        <img src="assets/img/portfolio/healthcare.jpg" alt="Healthcare Data Analysis" class="project-image">
         <div class="portfolio-info" style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.6); color: #fff; padding: 15px; text-align: center;">
           <h4 style="color: #fff;">Healthcare Data Analysis</h4>
           <p>Developed predictive models to enhance patient outcomes. Improved predictive accuracy by 20% through iterative model refinement.</p>
@@ -383,7 +383,7 @@
       </div><!-- End Portfolio Item -->
 
       <div class="portfolio-item" style="flex: 1 1 calc(50% - 20px); box-sizing: border-box; position: relative; overflow: hidden;">
-        <img src="assets/img/portfolio/ecommerce.jpg" alt="E-commerce Customer Behavior Analysis" style="width: 100%; height: 100%; object-fit: cover;">
+        <img src="assets/img/portfolio/ecommerce.jpg" alt="E-commerce Customer Behavior Analysis" class="project-image">
         <div class="portfolio-info" style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.6); color: #fff; padding: 15px; text-align: center;">
           <h4 style="color: #fff;">E-commerce Customer Behavior Analysis</h4>
           <p>Processed over 100 million customer interactions and deployed machine learning models to boost marketing effectiveness by 20%.</p>
@@ -391,7 +391,7 @@
       </div><!-- End Portfolio Item -->
 
       <div class="portfolio-item" style="flex: 1 1 calc(50% - 20px); box-sizing: border-box; position: relative; overflow: hidden;">
-        <img src="assets/img/portfolio/financial.jpg" alt="Financial Market Analysis and Predictive Modeling" style="width: 100%; height: 100%; object-fit: cover;">
+        <img src="assets/img/portfolio/financial.jpg" alt="Financial Market Analysis and Predictive Modeling" class="project-image">
         <div class="portfolio-info" style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.6); color: #fff; padding: 15px; text-align: center;">
           <h4 style="color: #fff;">Financial Market Analysis</h4>
           <p>Preprocessed 10 years of data and developed models to improve trading decisions and portfolio performance.</p>
@@ -399,7 +399,7 @@
       </div><!-- End Portfolio Item -->
 
       <div class="portfolio-item" style="flex: 1 1 calc(50% - 20px); box-sizing: border-box; position: relative; overflow: hidden;">
-        <img src="assets/img/portfolio/music.jpg" alt="Music and Mental Health Prediction" style="width: 100%; height: 100%; object-fit: cover;">
+        <img src="assets/img/portfolio/music.jpg" alt="Music and Mental Health Prediction" class="project-image">
         <div class="portfolio-info" style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.6); color: #fff; padding: 15px; text-align: center;">
           <h4 style="color: #fff;">Music and Mental Health Prediction</h4>
           <p>Analyzed listening habits and used clustering to uncover patterns in music's impact on mental health.</p>
@@ -410,7 +410,19 @@
 
   </div>
 
-</section><!-- /Portfolio Section -->
+</section><!-- /Project Section -->
+
+<!-- CSS for Image Hover Magnification -->
+<style>
+  .project-image {
+    transition: transform 0.3s ease;
+  }
+
+  .portfolio-item:hover .project-image {
+    transform: scale(1.1); /* Magnify image by 10% */
+  }
+</style>
+
 
 
 
