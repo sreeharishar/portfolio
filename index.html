@@ -433,23 +433,61 @@
 </section><!-- /Project Section -->
 
 <style>
-    /* CSS for Hover Effect */
-    .portfolio-item:hover .hover-buttons {
-      display: flex; /* Show the buttons when hovering over the portfolio item */
-      opacity: 1;    /* Make buttons fully visible */
-    }
+    /* Portfolio Item Styles */
+  .portfolio-item {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+  }
+  
+  /* Hover Effect for Image */
+  .portfolio-item:hover img {
+    transform: scale(1.1); /* Magnify the image */
+  }
+  
+  /* Hover Buttons - Initially hidden */
+  .hover-buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    opacity: 0;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    transition: opacity 0.3s ease; /* Smooth fade-in effect */
+  }
+  
+  /* Show buttons when hovering over the portfolio item */
+  .portfolio-item:hover .hover-buttons {
+    display: flex;
+    opacity: 1;
+  }
+  
+  /* Style the buttons */
+  .hover-buttons a {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hover-buttons a:hover {
+    background-color: #45a049; /* Change color on hover */
+  }
 
-    .portfolio-item {
-      position: relative; /* Ensure buttons are positioned relative to the image */
-    }
-
-    .hover-buttons a {
-      transition: background-color 0.3s ease;
-    }
-
-    .hover-buttons a:hover {
-      background-color: #45a049; /* Change color when hovering over buttons */
-    }
 </style>
 
 
