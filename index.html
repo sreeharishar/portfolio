@@ -429,7 +429,6 @@
 
 
 
-  
 <!-- Publications Section -->
 <section id="publications" class="publications section light-background">
   <div class="container section-title" data-aos="fade-up">
@@ -439,8 +438,10 @@
 
   <div class="container publication-container">
     <!-- First Publication -->
-    <div class="publication-card" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-      <h4><a href="https://ijisrt.com/number-plate-recognition-a-for-parking-assist-and-road-safety" target="_blank">Number Plate Recognition: A For Parking Assist and Road Safety</a></h4>
+    <div class="publication-card">
+      <h4>
+        <a href="https://ijisrt.com/number-plate-recognition-a-for-parking-assist-and-road-safety" target="_blank" class="publication-link">Number Plate Recognition: A For Parking Assist and Road Safety</a>
+      </h4>
       <p>International Journal of Innovative Science and Research Technology</p>
       <!-- Accordion collapse content -->
       <div id="collapseOne" class="accordion-collapse collapse">
@@ -451,8 +452,10 @@
     </div><!-- End First Publication -->
 
     <!-- Second Publication -->
-    <div class="publication-card" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-      <h4><a href="https://ijisrt.com/crowd-safety-management-system" target="_blank">Crowd Safety Management System</a></h4>
+    <div class="publication-card">
+      <h4>
+        <a href="https://ijisrt.com/crowd-safety-management-system" target="_blank" class="publication-link">Crowd Safety Management System</a>
+      </h4>
       <p>International Journal of Innovative Science and Research Technology</p>
       <!-- Accordion collapse content -->
       <div id="collapseTwo" class="accordion-collapse collapse">
@@ -462,7 +465,6 @@
       </div>
     </div><!-- End Second Publication -->
   </div><!-- End Publication Container -->
-
 </section><!-- End Publications Section -->
 
 <!-- CSS for Card Layout with Accordion -->
@@ -502,13 +504,13 @@
     font-size: 0.9em;
   }
 
-  .publication-card a {
+  .publication-link {
     color: #007bff;
     text-decoration: none;
     font-weight: bold;
   }
 
-  .publication-card a:hover {
+  .publication-link:hover {
     color: #0056b3;
   }
 
@@ -536,7 +538,6 @@
 <!-- JavaScript for Accordion -->
 <script>
   // You can use Bootstrap's collapse JavaScript functionality for the accordion
-  // Initialize Bootstrap Collapse for accordions
   var myCollapse = document.querySelectorAll('.collapse');
   myCollapse.forEach(function (collapse) {
     new bootstrap.Collapse(collapse, {
@@ -544,8 +545,6 @@
     });
   });
 </script>
-
-
 
 
 
