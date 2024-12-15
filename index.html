@@ -354,14 +354,14 @@
 
 
 
- <!-- Resume PDF Link -->
+<!-- Resume PDF Link -->
 <section id="resume" class="resume section light-background">
   <div class="container" data-aos="fade-up">
     <div class="row gy-4">
       <div class="col-lg-4 col-md-6 mx-auto">
-        <div class="card download-card" style="border: 1px solid #f0f0f0; border-radius: 8px; overflow: hidden; background-color: #fff; padding: 30px; text-align: center;">
+        <div class="download-card" style="background: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; margin-bottom: 20px; cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease;">
           <!-- Download Text -->
-          <a href="assets/resume/resume.pdf" target="_blank" class="download-link" style="text-decoration: none; color: #333; font-size: 1.2em;">Download My Resume</a>
+          <a href="assets/resume/resume.pdf" target="_blank" class="download-link" style="text-decoration: none; color: #007bff; font-size: 1.2em; font-weight: bold;">Download My Resume</a>
         </div>
       </div><!-- End Resume Card -->
     </div>
@@ -371,20 +371,23 @@
 <!-- CSS for Hover Magnify Effect -->
 <style>
   .download-card {
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .download-card:hover {
     transform: scale(1.05); /* Slight magnification effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
   }
 
   .download-link {
-    color: #333; /* Default text color */
-    transition: color 0.3s ease;
+    color: #007bff; /* Blue color for text */
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
   }
 
   .download-link:hover {
-    color: #007bff; /* Blue color on hover */
+    color: #0056b3; /* Darker blue on hover */
   }
 </style>
 
