@@ -428,6 +428,9 @@
 </style>
 
 
+
+  
+<!-- Publications Section -->
 <section id="publications" class="publications section light-background">
   <div class="container section-title" data-aos="fade-up">
     <h2>Publications</h2>
@@ -435,19 +438,42 @@
   </div><!-- End Section Title -->
 
   <div class="container publication-container">
-    <div class="publication-card">
+    <!-- First Publication -->
+    <div class="publication-card" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
       <h4><a href="https://ijisrt.com/number-plate-recognition-a-for-parking-assist-and-road-safety" target="_blank">Number Plate Recognition: A For Parking Assist and Road Safety</a></h4>
       <p>International Journal of Innovative Science and Research Technology</p>
-    </div>
-    <div class="publication-card">
+      <!-- Accordion collapse content -->
+      <div id="collapseOne" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          This research explores the use of number plate recognition for parking assist and road safety.
+        </div>
+      </div>
+    </div><!-- End First Publication -->
+
+    <!-- Second Publication -->
+    <div class="publication-card" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
       <h4><a href="https://ijisrt.com/crowd-safety-management-system" target="_blank">Crowd Safety Management System</a></h4>
       <p>International Journal of Innovative Science and Research Technology</p>
-    </div>
+      <!-- Accordion collapse content -->
+      <div id="collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          This paper focuses on crowd safety management systems to improve public safety in high-traffic areas.
+        </div>
+      </div>
+    </div><!-- End Second Publication -->
   </div><!-- End Publication Container -->
+
 </section><!-- End Publications Section -->
 
-<!-- CSS for Publications Section -->
+<!-- CSS for Card Layout with Accordion -->
 <style>
+  .publication-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
   .publication-card {
     background: #fff;
     border-radius: 10px;
@@ -456,10 +482,11 @@
     margin-bottom: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
+    cursor: pointer;
   }
 
   .publication-card:hover {
-    transform: translateY(-10px);
+    transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
@@ -485,13 +512,20 @@
     color: #0056b3;
   }
 
-  .publication-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin-top: 20px;
+  .accordion-collapse {
+    margin-top: 15px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    color: #333;
   }
 
+  .accordion-body {
+    padding: 10px;
+  }
+
+  /* Responsiveness */
   @media (max-width: 768px) {
     .publication-container {
       grid-template-columns: 1fr;
@@ -499,7 +533,17 @@
   }
 </style>
 
-
+<!-- JavaScript for Accordion -->
+<script>
+  // You can use Bootstrap's collapse JavaScript functionality for the accordion
+  // Initialize Bootstrap Collapse for accordions
+  var myCollapse = document.querySelectorAll('.collapse');
+  myCollapse.forEach(function (collapse) {
+    new bootstrap.Collapse(collapse, {
+      toggle: false
+    });
+  });
+</script>
 
 
 
