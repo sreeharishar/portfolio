@@ -352,21 +352,36 @@
 
     </div><!-- End Row -->
 
+
+
     
-   <!-- Resume PDF Link -->
+  <!-- Resume PDF Link -->
 <section id="resume" class="resume section light-background">
   <div class="container" data-aos="fade-up">
     <div class="row gy-4">
       <div class="col-lg-4 col-md-6 mx-auto">
-        <div class="card" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background-color: #fff; padding: 30px; text-align: center;">
-          <!-- Icon inside Card -->
-          <i class="fas fa-download" style="font-size: 3em; color: #007bff;"></i>
-          <a href="assets/resume/resume.pdf" target="_blank" class="btn btn-primary mt-3" style="text-decoration: none;">Download Resume</a>
+        <div class="card download-card" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background-color: #fff; padding: 30px; text-align: center;">
+          <!-- Download Text -->
+          <a href="assets/resume/resume.pdf" target="_blank" class="btn btn-primary" style="text-decoration: none; color: #fff; font-size: 1.2em;">Download My Resume</a>
         </div>
       </div><!-- End Resume Card -->
     </div>
   </div>
 </section><!-- End Resume PDF Link -->
+
+<!-- CSS for Hover Magnify Effect -->
+<style>
+  .download-card {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .download-card:hover {
+    transform: scale(1.05); /* Slight magnification effect */
+  }
+</style>
+
+
+    
 
 
   </div><!-- End Container -->
